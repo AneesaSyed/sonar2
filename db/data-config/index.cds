@@ -1,0 +1,1 @@
+namespace sonar2.db;
