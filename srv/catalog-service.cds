@@ -31,12 +31,7 @@ service CatalogService @(path : '/catalog')
                   ])
       
       as select * from db.Sales
-      actions {
-        @(restrict: [{ to: 'Viewer' }])
-        function largestOrder() returns String;
-        @(restrict: [{ to: 'Admin' }])
-        action boost() returns Sales;
-      }
+
     ;
 
 
