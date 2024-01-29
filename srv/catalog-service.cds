@@ -29,6 +29,7 @@ service CatalogService @(path : '/catalog')
                      to: 'Admin' 
                    }
                   ])
+      
       as select * from db.Sales
       actions {
         @(restrict: [{ to: 'Viewer' }])
